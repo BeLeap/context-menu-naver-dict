@@ -6,7 +6,7 @@
   "permissions": ["contextMenus"],
   "content_scripts": [
     {
-      "matches": ["*"],
+      "matches": ["<all_urls>"],
       "js": ["src/Index.res.js"]
     }
   ]
