@@ -1,6 +1,6 @@
 @val external browser: 'a = "browser"
 
-type browserContextMenuCreateOption = {
+type browserContextMenuCreateProperties = {
   id: string,
   title: string,
   contexts: array<string>,
@@ -14,12 +14,12 @@ let search = (word: string) => {
   })
 }
 
-let option: browserContextMenuCreateOption = {
+let properties: browserContextMenuCreateProperties = {
   id: contextMenuId,
   title: "Search in Naver Dictionary",
   contexts: ["selection"],
 }
-browser["contextMenus"]["create"](option)
+browser["contextMenus"]["create"](properties)
 
 browser["contextMenus"]["onClicked"]["addListener"](info => {
   if info["menuItemId"] === contextMenuId {
