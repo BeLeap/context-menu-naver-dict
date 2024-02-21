@@ -1,4 +1,11 @@
+@val external chrome: 'a = "chrome"
 @val external browser: 'a = "browser"
+
+let browserInterop = if chrome {
+  chrome
+} else {
+  browser
+}
 
 type browserContextMenuCreateProperties = {
   id: string,
@@ -9,7 +16,7 @@ type browserContextMenuCreateProperties = {
 let contextMenuId = "naver-dict"
 
 let search = (word: string) => {
-  browser["tabs"]["create"]({
+  browserInterop["tabs"]["create"]({
     "url": `https://dict.naver.com/search?query=${word}`,
   })
 }
@@ -19,9 +26,9 @@ let properties: browserContextMenuCreateProperties = {
   title: "Search in Naver Dictionary",
   contexts: ["selection"],
 }
-browser["contextMenus"]["create"](properties)
+browserInterop["contextMenus"]["create"](properties)
 
-browser["contextMenus"]["onClicked"]["addListener"](info => {
+browserInterop["contextMenus"]["onClicked"]["addListener"](info => {
   if info["menuItemId"] === contextMenuId {
     search(info["selectionText"])
   }
