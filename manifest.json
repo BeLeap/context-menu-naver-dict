@@ -3,7 +3,11 @@
   "name": "Add Naver Dictionary to Context Menu Entry",
   "version": "0.0.0",
   "description": "Adds search naver dictionary context entry for selected word.",
-  "permissions": ["contextMenus"],
+  "permissions": [
+    "<all_urls>",
+    "contextMenus",
+    "tabs"
+  ],
   "background": {
     "scripts": ["src/Index.res.js"],
     "persistent": false
