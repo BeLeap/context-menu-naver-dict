@@ -7,7 +7,7 @@ Chrome Web Store는 개발자 계정 수수료가 필요하기 때문에 제출�
 
 ### 파일으로
 
-확장프로그램 파일은 [Release](https://github.com/BeLeap/context-menu-naver-dict/releases)에서 찾을 수 있습니다.
+확장프로그램 파일은 [Releases](https://github.com/BeLeap/context-menu-naver-dict/releases)에서 찾을 수 있습니다.
 
 ## 빌드하기
 
