@@ -1,5 +1,8 @@
 # Add Naver Dictionary to Context Menu Entry
 
+This extension supports Firefox and Chrome.
+I have not submitted this extension to the Chrome Web Store because it requires a developer account fee.
+
 ## To Install
 
 ## From File
