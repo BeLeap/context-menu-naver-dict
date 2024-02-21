@@ -1,6 +1,5 @@
 {
   "name": "context-menu-naver-dict",
-  "version": "0.1",
   "scripts": {
     "res:build": "rescript",
     "res:clean": "rescript clean",
