@@ -2,11 +2,11 @@
 
 ## To Build
 
-## Prerequisite
+### Prerequisite
 
 - [nix](https://nix.dev/)
 
-## Building
+### Building
 
 ```
 nix build
