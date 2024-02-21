@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Add Naver Dictionary to Context Menu Entry",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Adds search naver dictionary context entry for selected word.",
   "permissions": [
     "<all_urls>",
