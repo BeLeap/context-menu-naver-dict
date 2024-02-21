@@ -1,6 +1,6 @@
 # Add Naver Dictionary to Context Menu Entry
 
-## Install
+## To Install
 
 ## From File
 
