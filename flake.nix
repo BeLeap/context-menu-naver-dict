@@ -10,7 +10,7 @@
     in
     {
       packages = {};
-      devShell.default = {
+      devShells.default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
           web-ext
         ];
