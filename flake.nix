@@ -14,20 +14,22 @@
     in
     {
       packages = rec {
-        context-menu-naver-dict = pkgs.stdenv.mkDerivation {
+        context-menu-naver-dict = pkgs.buildNpmPackage {
           inherit nativeBuildInputs;
           
           name = "context-menu-naver-dict";
           src = ./.;
 
-          preBuild = ''
-            npm i
-            npm run res:build
-          '';
+          npmDepsHash = "sha256-Qc67vIPQgaJD9xdnkf9FDzOu/61idegiJJiAJAH8QDk=";
+
           buildPhase = ''
+            npm run res:build
             web-ext build
-            mv web-ext-artifacts $out
           '';
+
+          installPhase = "
+            mv web-ext-artifacts $out
+          ";
         };
         default = context-menu-naver-dict;
       };
