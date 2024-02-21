@@ -1,15 +1,11 @@
 {
   "name": "context-menu-naver-dict",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1",
   "scripts": {
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript -w"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "@rescript/core": "^1.0.0",
